@@ -6,7 +6,7 @@ pipeline {
         stage('Clone Backend') {
             steps {
                 dir('backend') {
-                    git branch: 'main', url: 'https://github.com/FallDhk/PortailStages.git'
+                    git branch: 'master', url: 'https://github.com/FallDhk/PortailStages.git'
                 }
             }
         }
@@ -14,7 +14,7 @@ pipeline {
         stage('Clone Frontend') {
             steps {
                 dir('frontend') {
-                    git branch: 'main', url: 'https://github.com/FallDhk/portail-stages-frontend.git'
+                    git branch: 'master', url: 'https://github.com/FallDhk/portail-stages-frontend.git'
                 }
             }
         }
