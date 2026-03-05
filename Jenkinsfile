@@ -6,7 +6,7 @@ pipeline {
         stage('Clone Backend') {
             steps {
                 dir('backend') {
-                    git branch: 'master', url: 'https://github.com/FallDhk/PortailStages.git'
+                    git branch: 'main', url: 'https://github.com/FallDhk/PortailStages.git'
                 }
             }
         }
